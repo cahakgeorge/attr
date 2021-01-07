@@ -21,7 +21,7 @@ class SignupFeatureTest extends TestCase
 
         $signupData = ['email' => $faker->safeEmail, 'firstname' => $faker->firstName, 'lastname' => $faker->lastName, "dob"=> "2004-10-18",
                         'password' => 'secret'];
-
+        
         $response = $this->http->request('POST', 'user', ['json' => $signupData]);
         $this->assertEquals(201, $response->getStatusCode());
     } 
