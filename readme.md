@@ -1,4 +1,4 @@
-Attr.IO PHP App
+Code Test App
 ==============
 
 This is a solution app for the short [API] test given.
